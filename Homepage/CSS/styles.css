@@ -1,5 +1,8 @@
 /*Mobile*/
 
+a {text-decoration: none;
+}
+
 body {max-width: 768px;
     margin: 0 auto;}
 
@@ -7,13 +10,15 @@ h1 {font-family: 'Shrikhand';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 44px; 
+    line-height: 44px;
+    color: black; 
 }
 
 h2 {font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    color: black;
     
 }
 
@@ -22,6 +27,7 @@ h3 {font-family: 'Roboto';
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+    color: black;
 
 }
 
@@ -30,7 +36,71 @@ h4 {font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    color: black;
 }
+
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: #ff3d00;
+    box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #ff3d00;
+    }
+    50% {
+      box-shadow: 0 0 0 #ff3d00;
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #ff3d00;
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #fff;
+    }
+    50% {
+      box-shadow: 0 0 0 #fff;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #fff;
+      margin-top: 0;
+    }
+  }
+  
 
 /*Header*/
 
@@ -55,7 +125,8 @@ background-color: #EAEAEA;}
 
 /*Nav*/
 
-nav {background-color: #F7F7F7;}
+nav {background-color: #F7F7F7;
+padding-bottom: 30px;}
 
 nav h2 {text-align: center;
     padding: 39px 50px 0px 50px;
@@ -63,11 +134,13 @@ nav h2 {text-align: center;
 
 nav h3 {color: #353535;
     text-align: center;
-padding: 0px 30px;}
+padding: 0px 0px;}
 
 nav h4 {color: white;
 padding: 13px 18.75px;
-text-align: center;}
+text-align: center;
+margin: 27px 0px;
+}
 
 .nav-button {background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -75,5 +148,177 @@ text-align: center;}
     width: 218px;
     align-self: center;
     margin-left: auto;
-margin-right: auto;}
+margin-right: auto;
+}
+
+/*MAIN*/
+
+
+
+/*fonctionnement*/
+
+.fonct {padding-bottom: 68px;
+    margin: 0PX 20PX 0PX 20px}
+
+.fonct h2 {margin: 48PX 0PX 26PX 0px;
+}
+
+.fonctionnement-parent {display: flex;
+flex-direction: column;
+gap: 25px}
+
+.fonctionnement {display: flex;
+flex-direction: row;
+justify-content: flex-start;
+background: #F7F7F7;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+border-radius: 20px;
+margin: 0PX 0PX 0PX 12px;
+padding-top: 26px;
+padding-bottom: 26px ;
+-ms-flex-align: center;
+}
+
+.fonctionnement h4 {margin: 0px;
+padding-left: 27px;
+text-align: center;
+line-height: 24px;}
+
+.fonctionnement p {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.1818px;
+    line-height: 24px;
+    margin: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.fonctionnement i {padding-left: 9px;
+    color: #7E7E7E;
+    line-height: 24px;
+}
+
+.pastille {height: 24px;
+width: 24px;
+background:#9356DC;
+border-radius: 12px;
+position: relative ;
+left: -12px;}
+
+.fonctionnement:hover{
+    background: #F5EDFF;
+    color:#9356DC ;}
+
+/*restaurant*/
+
+.restaurant-background {background-color: #F7F7F7;
+padding: 0PX 20PX 64PX 20px;
+}
+
+.restaurant-background h2 {margin: 0px;
+padding: 54px 0PX 20PX 0px;}
+
+.restaurant-parent {display: flex;
+flex-direction: column;
+gap: 18px;}
+
+.restaurant {background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;}
+
+
+
+.nouveau {font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #008766;
+    font-family: 'Roboto';
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width: 80px;
+    height: 29px;
+    margin-bottom: -43px;
+    position: relative;    
+    LEFT: 100%;
+    top: 0px;
+    margin-left: -100px;
+    }
+    
+
+    
+
+.restaurant img {width: 100%;
+    height:174px ;
+    object-fit: cover;
+    border-radius: 15PX 15PX 0PX 0px;
+    }
+
+.restaurant h2 {font-size: 18px;
+line-height: 21px;
+padding: 0px;}
+
+.restaurant h3 {font-size: 17px;
+line-height: 20px;
+margin: 0px;
+padding-top: 5px;}
+
+.restaurant-texte {display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 16PX 24PX 20PX 12px;
+}
+
+.restaurant-texte i {align-self: center;}
+
+/*footer*/
+
+.footer {background: #353535;
+padding-left: 25px;}
+
+.footer-flex {display: flex;
+flex-direction: column;
+gap: 8px;
+padding-bottom: 33px;
+}
+
+.footer p {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0px;
+    }
+
+.footer h1 {font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 22PX 0PX 16PX 0PX ;
+}
+
+.icon {color: #FFFFFF;
+padding-right: 10px;}
+
+.footer-icon {display: flex;
+flex-direction: row;}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
     
