@@ -3,8 +3,8 @@
 a {text-decoration: none;
 }
 
-body {max-width: 768px;
-    margin: 0 auto;}
+body {margin: 0 auto;
+}
 
 h1 {font-family: 'Shrikhand';
     font-style: normal;
@@ -84,11 +84,32 @@ margin: 27px 0px;
 .nav-button {background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    scale: 1;
     width: 218px;
     align-self: center;
     margin-left: auto;
+    padding: 13px 0px;
 margin-right: auto;
+transition: 400ms;
+border: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #FFFFFF;
 }
+
+
+.nav-button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
 
 /*MAIN*/
 
@@ -116,6 +137,7 @@ margin: 0PX 0PX 0PX 12px;
 padding-top: 26px;
 padding-bottom: 26px ;
 -ms-flex-align: center;
+transition: 400ms ;
 }
 
 .fonctionnement h4 {margin: 0px;
@@ -145,9 +167,15 @@ border-radius: 12px;
 position: relative ;
 left: -12px;}
 
-.fonctionnement:hover{
+.fonctionnement:hover {
+    background: #F5EDFF;}
+    
+.fonctionnement:hover i{
     background: #F5EDFF;
-    color:#9356DC ;}
+    color:#9356DC ;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+}
 
 /*restaurant*/
 
@@ -246,8 +274,133 @@ padding-right: 10px;}
 .footer-icon {display: flex;
 flex-direction: row;}
 
+/*animation*/
 
 
+.loader-img {position: fixed;
+    top: 40%;
+    width: 100%;
+    display: flex ;
+    justify-content: space-around;
+    scale: 0.5;
+    animation: img 1.5s;
+    animation-fill-mode:both ;
+    z-index: 2;
+}
+
+    @keyframes img {
+   
+        90% {
+           
+           opacity: 1;
+        }
+    
+        100%{opacity: 0;
+        visibility: hidden;}
+     }
+
+.colorful {
+    width: 31.4px;
+    height: 31.4px;
+    position: fixed;
+    top: 50%;
+    left: 49%;
+    background: #9356dc;
+    border-radius: 50%;
+    animation: colorful-qyh1n1md 1.5s;
+    animation-fill-mode: both;
+    z-index: 2;
+ }
+
+ @keyframes colorful-qyh1n1md {
+    0%, 100% {
+       transform: translate(-39.2px);
+       box-shadow: 0     0 #b568ba, 0     0 #ff79da;
+    }
+ 
+    40% {
+       transform: translate( 39.2px);
+       box-shadow: -16.8px  0 #b568ba,-33.6px  0 #ff79da;
+    }
+ 
+    50% {
+       transform: translate( 39.2px);
+       box-shadow: 0     0 #b568ba, 0     0 #ff79da;
+       
+    }
+ 
+    90% {
+       transform: translate(-39.2px);
+       box-shadow: 16.8px  0 #b568ba, 33.6px  0 #ff79da;
+       opacity: 1;
+    }
+
+    100%{opacity: 0;
+    visibility: hidden;}
+ }
+
+.loader-background {position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: fixed 3s linear;
+    animation-fill-mode:both ;
+    z-index: 1;
+}
+
+    @keyframes fixed {
+    
+        0% {opacity: 1;}
+
+        50% {opacity: 1;}
+    
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+.animate-heart {-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+position: relative;
+background-clip: border-box;
+}
+
+/*Mediaqueries*/
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 992px) {
+
+.fonctionnement-parent {flex-direction: row;
+}
+
+.fonctionnement {width: 322px;}
+
+.fonct {margin: 0px 5px 0px 160px;}
+
+.restaurant-parent {display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 50px;
+}
+
+.restaurant {max-width: 490px;}
+
+.restaurant-background {padding: 0px 160px 30px 160px;}
+
+.footer-flex {flex-direction: row;
+justify-content: flex-end;}
+
+.responsive {position: relative;
+right: Opx;}
+
+
+
+
+
+}
 
 
 
