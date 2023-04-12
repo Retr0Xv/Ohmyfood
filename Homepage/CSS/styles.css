@@ -248,7 +248,7 @@ padding-left: 25px;}
 
 .footer-flex {display: flex;
 flex-direction: column;
-gap: 8px;
+gap: 10px;
 padding-bottom: 33px;
 }
 
@@ -361,13 +361,71 @@ flex-direction: row;}
             visibility: hidden;
         }
     }
-.animate-heart {-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-position: relative;
-background-clip: border-box;
+.animate-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.animate-heart .heart-empty {
+    position: relative;
+    font-size:24px;
+}
+
+.animate-heart .heart-full {
+    font-size:24px;
+    opacity: 0;
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    transition: 0.4s ease-in-out;
+}
+
+.animate-heart .heart-empty:hover {
+    opacity: 0
+}
+
+.animate-heart .heart-full:hover  {
+    opacity: 1
+}
+
+
 /*Mediaqueries*/
+
+/*Tablette*/
+
+@media only screen and (min-width: 768px) {
+
+.restaurant-parent {display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 50px;
+}
+
+.restaurant {max-width: 490px;}
+
+
+
+.footer-flex {flex-direction: row;
+justify-content: flex-end;
+padding: 64PX 0PX 30PX 0px;}
+
+.footer {display: flex;
+    flex-direction: row-reverse;}
+
+.footer h1 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 57PX 30PX 0PX 50PX;}
+
+.partenaire{padding-right: 30px;}
+
+}
+
+
 
 /*DESKTOP*/
 
@@ -378,7 +436,9 @@ background-clip: border-box;
 
 .fonctionnement {width: 322px;}
 
-.fonct {margin: 0px 5px 0px 160px;}
+.fonct {margin: 0% 12.5% 0PX 12.5%;;}
+
+.fonct h4 {white-space: nowrap;}
 
 .restaurant-parent {display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -388,19 +448,26 @@ background-clip: border-box;
 
 .restaurant {max-width: 490px;}
 
-.restaurant-background {padding: 0px 160px 30px 160px;}
+.restaurant-background {padding: 0px 12.5% 30px 12.5%;}
 
 .footer-flex {flex-direction: row;
-justify-content: flex-end;}
+justify-content: flex-end;
+padding: 64PX 0PX 30PX 0px;}
 
-.responsive {position: relative;
-right: Opx;}
+.footer {display: flex;
+    flex-direction: row-reverse;}
 
+.footer h1 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 57PX 30PX 0PX 50PX;}
 
-
-
+.partenaire{padding-right: 30px;}
 
 }
+
 
 
 
