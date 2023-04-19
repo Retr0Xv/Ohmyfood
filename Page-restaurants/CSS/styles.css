@@ -164,7 +164,7 @@ border-radius: 15.0431px;
     }
 
 
-.card-parent:active .check {display: flex;
+.card-parent:hover .check {display: flex;
     animation: appear 0.5s linear;
 }
 
@@ -174,7 +174,7 @@ border-radius: 15.0431px;
     100% {width: 59px;}
 }
 
-.card-parent:active .check-icon {animation: 1s icon linear;
+.card-parent:hover .check-icon {animation: 1s icon linear;
 }
 
 @keyframes icon {
@@ -442,11 +442,6 @@ nav img {height: 375px;}
 
 .restaurantname {justify-content:center;}
 
-.card-parent:hover .check {display: flex;
-    animation: appear 0.5s linear;
-}
-
-.card-parent:hover .check-icon {animation: 1s icon linear;
 }
 
 .footer-flex {flex-direction: row;
