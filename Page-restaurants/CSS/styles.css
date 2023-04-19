@@ -46,15 +46,25 @@ h4 {font-family: 'Roboto';
 /*Header*/
 
 .header-tittle {width: 100%;
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
     text-align: center;
+    MARGIN-RIGHT: 34px;
 }
 
 header h1 {margin: 0px;
-padding: 14px 0px 5px 0px;
+
 }
 
+header {display: flex;
+padding-top: 14px;
+padding-bottom: 5px;
+box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.15);}
 
+.BACKROW {align-self: center;
+    padding-left: 20px;}
+
+.backrow-link {height: 16px;
+align-self: center;
+}
 
 /*Nav*/
 
@@ -387,13 +397,15 @@ flex-direction: row;}
 
 /*TABLETTE*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
 
 main {
     margin: -60px 25PX 0PX 25PX;
     PADDING: 0PX 10%;}
 
 main h1 {padding-right: 24px;}
+
+nav img {height: 375px;}
 
 .restaurantname {justify-content:center;}
 
@@ -421,11 +433,21 @@ padding: 64PX 0PX 30PX 0px;}
 
 main {
     margin: -60px 192PX 0PX 192PX;
+    padding: 0% 13%;
     }
 
 main h1 {padding-right: 24px;}
 
+nav img {height: 375px;}
+
 .restaurantname {justify-content:center;}
+
+.card-parent:hover .check {display: flex;
+    animation: appear 0.5s linear;
+}
+
+.card-parent:hover .check-icon {animation: 1s icon linear;
+}
 
 .footer-flex {flex-direction: row;
 justify-content: flex-end;

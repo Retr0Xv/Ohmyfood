@@ -434,7 +434,8 @@ padding: 64PX 0PX 30PX 0px;}
 .fonctionnement-parent {flex-direction: row;
 }
 
-.fonctionnement {width: 322px;}
+.fonctionnement {width: 322px;
+flex: 1;}
 
 .fonct {margin: 0% 12.5% 0PX 12.5%;;}
 
