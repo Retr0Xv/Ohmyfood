@@ -55,7 +55,7 @@ h4 {
 .header-tittle {
     width: 100%;
     text-align: center;
-    MARGIN-RIGHT: 34px;
+    margin-right: 34px;
 }
 
 
@@ -273,36 +273,45 @@ main h4 {
 
 /*footer*/
 
-.footer {background: #353535;
-    padding-left: 25px;}
-    
-.footer-flex {display: flex;
+.footer {
+    background: #353535;
+    padding-left: 25px;
+}
+
+.footer-flex {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 33px;
-    }
-    
-.footer p {font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
-        margin: 0px;
-        }
-    
-.footer h1 {font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
-        margin: 0px;
-        padding: 22PX 0PX 16PX 0PX ;
 }
-    
-    .icon {color: #FFFFFF;
-    padding-right: 10px;}
-    
-    .footer-icon {display: flex;
-    flex-direction: row;}
+
+.footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.footer h1 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 22PX 0PX 16PX 0PX;
+}
+
+.icon {
+    color: #FFFFFF;
+    padding-right: 10px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+}
 
 .Entrées {
     animation: entrées 4s linear;
@@ -557,29 +566,27 @@ main h4 {
         justify-content: center;
     }
 
+    .footer-flex {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 64PX 0PX 30PX 0px;
+    }
 
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-.footer-flex {
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 64PX 0PX 30PX 0px;
-}
+    .footer h1 {
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 57PX 30PX 0PX 50PX;
+    }
 
-.footer {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.footer h1 {
-    font-size: 18px;
-    line-height: 26px;
-    color: #FFFFFF;
-    margin: 0px;
-    padding: 57PX 30PX 0PX 50PX;
-}
-
-.partenaire {
-    padding-right: 30px;
-}
+    .partenaire {
+        padding-right: 30px;
+    }
 
 }
