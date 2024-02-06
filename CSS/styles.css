@@ -2,6 +2,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 body {
@@ -104,7 +105,7 @@ nav h4 {
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    scale: 1;
+    transform:scale(1);
     width: 218px;
     align-self: center;
     margin-left: auto;
@@ -340,7 +341,7 @@ nav h4 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    scale: 0.5;
+    transform: scale(0.5);
     animation: img 1.5s;
     animation-fill-mode: both;
     z-index: 2;

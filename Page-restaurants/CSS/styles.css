@@ -2,6 +2,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 body {
@@ -139,7 +140,7 @@ main h3 {
 
 main p {
     font-family: 'Roboto';
-    font-style: thin;
+    
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
@@ -220,19 +221,19 @@ main h4 {
 
 @keyframes icon {
     0% {
-        scale: 0;
+        transform: scale(0);
     }
 
     50% {
-        scale: 0;
+        transform: scale(0);
     }
 
     75% {
-        scale: 1.5;
+        transform: scale(1.5);
     }
 
     100% {
-        scale: 1;
+        transform: scale(1);
     }
 }
 
@@ -245,7 +246,7 @@ main h4 {
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    scale: 1;
+    transform: scale(1);
     width: 186px;
     align-self: center;
     margin-left: auto;
@@ -376,7 +377,7 @@ main h4 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    scale: 0.5;
+    transform: scale(0.5);
     animation: img 1.5s;
     animation-fill-mode: both;
     z-index: 2;
