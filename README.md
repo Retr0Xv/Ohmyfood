@@ -148,54 +148,6 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 * Mettre en œuvre des effets CSS graphiques avancés
 
-## Evaluation
-
-___Évaluation___ : mardi 14 juin 2022
-#### -> `Projet validé`
-
-
-### Remarques sur l'évaluation
-
-1. Mettre en place son environnement Front-End
-
- __-> Site déployé grâce à Git.__
-
-
-
-2. Mettre en place une structure de navigation pour un site web
-
- __-> Bonne utilisation de sass + utilisation des balises sémentiques + code valide w3c__
-
-
-
-3. Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
-
-  __-> L'étudiante utilise convenablement les outils git et github. L'application est régulièrement versionnée.__
-
-
-
-4. Assurer la cohérence graphique d'un site web
-
-  __-> La maquette mobile est parfaitement respectée + Les versions desktop et tablette sont en harmonie avec la version mobile + le site est bien responsive__
-
-
-
-5. Mettre en œuvre des effets CSS graphiques avancés
-
-  __-> Les effets css demandés sont tous intégrés__
-
-
-### Livrables
-
-___Points forts___ : __Bonne prise en main de sass__ 
-
-
-### Soutenance
-
-La soutenance s'est déroulée dans les temps. L'étudiante a fait preuve d'une bonne compréhension du besoin client et d'un parfaite acquisition des compétences hards.
-
-__Excellent travail !!👏🏼👏🏼👏🏼__
-
 ## Ressources utilisées
 
 * [Sass](https://sass-lang.com/) - Langage de script préprocesseur qui est compilé ou interprété en CSS.
